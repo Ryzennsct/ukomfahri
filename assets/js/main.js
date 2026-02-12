@@ -1,10 +1,3 @@
-/**
-* Template Name: Landify
-* Template URL: https://bootstrapmade.com/landify-bootstrap-landing-page-template/
-* Updated: Aug 04 2025 with Bootstrap v5.3.7
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 (function() {
   "use strict";
@@ -82,7 +75,7 @@
   document.addEventListener('scroll', toggleScrollTop);
 
   /**
-   * Animation on scroll function and init
+   * Animation 
    */
   function aosInit() {
     AOS.init({

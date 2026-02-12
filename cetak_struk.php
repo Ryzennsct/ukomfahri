@@ -25,11 +25,19 @@ font-family: Arial;
 width:280px;
 margin:auto;
 }
+@media print {
+    .no-print {
+        display: none;
+    }
+}
+
 </style>
 
 </head>
 
-<body onload="setTimeout(()=>window.print(),800)">
+<body onload="setTimeout(()=>window.print(),500)"
+      onafterprint="window.location.href='index.php#sistem-parkir'">
+
 
 <div id="qrcode" style="display:flex; justify-content:center; margin:10px 0;"></div>
 
@@ -54,6 +62,20 @@ Total : Rp <?=number_format($d['biaya_total'])?>
 <hr>
 
 <center>Terima Kasih</center>
+
+<br>
+
+<div class="no-print" style="text-align:center; margin-top:10px;">
+    <a href="index.php#sistem-parkir" 
+       style="padding:8px 15px; 
+              background:#00bcd4; 
+              color:white; 
+              text-decoration:none; 
+              border-radius:5px;">
+        Kembali
+    </a>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
 

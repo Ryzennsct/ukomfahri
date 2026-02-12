@@ -34,6 +34,19 @@
       border-radius: 12px;
       box-shadow: 0 10px 40px rgba(0,0,0,0.25);
     }
+
+        .btn-cyan {
+      background-color: #00bcd4;
+      border-color: #00bcd4;
+      color: white;
+    }
+
+    .btn-cyan:hover {
+      background-color: #0097a7;
+      border-color: #0097a7;
+      color: white;
+    }
+
   </style>
 </head>
 <body class="d-flex align-items-center justify-content-center">
@@ -55,7 +68,7 @@
         <input type="password" name="password" class="form-control" required>
       </div>
 
-      <button type="submit" class="btn btn-primary w-100">
+      <button type="submit" class="btn btn-cyan w-100">
         Login
       </button>
     </form>

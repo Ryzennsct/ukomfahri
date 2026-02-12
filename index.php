@@ -1537,9 +1537,13 @@ document.getElementById('jenis').value=d.jenis_kendaraan;
                                 </div>
                                 
                                 <div class="d-flex justify-content-end mb-3">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-cyan">
                                         <i class="bi bi-search me-2"></i>Cari Transaksi
                                     </button>
+                                    <a href="cetak_pdf.php?tanggal_mulai=<?= $_GET['tanggal_mulai'] ?? '' ?>&tanggal_akhir=<?= $_GET['tanggal_akhir'] ?? '' ?>&status=<?= $_GET['status'] ?? '' ?>" 
+                                    class="btn btn-danger">
+                                    Cetak PDF
+                                    </a>
                                 </div>
                             </form>
 
